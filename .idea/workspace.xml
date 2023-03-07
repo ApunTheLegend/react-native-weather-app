@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0c2b9cd-d89f-436b-a1e8-99c1979f8b3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Buttons/FloatingActionButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Buttons/FloatingActionButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Containers/AppBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Containers/AppBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Inputs/InputField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Inputs/InputField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Texts/ErrorText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Texts/ErrorText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Texts/LabelText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Texts/LabelText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/constants.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/CurrentScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/CurrentScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/WeatherScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/WeatherScreen.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +56,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1350" height="678" key="AVDManager" timestamp="1677171589929">
+    <state x="93" y="93" width="1350" height="678" key="AVDManager" timestamp="1678216887814">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="AVDManager/0.0.1536.864@0.0.1536.864" timestamp="1677171589929" />
+    <state x="93" y="93" width="1350" height="678" key="AVDManager/0.0.1536.864@0.0.1536.864" timestamp="1678216887814" />
   </component>
 </project>

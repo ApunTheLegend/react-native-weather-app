@@ -1,13 +1,17 @@
 import { useFonts } from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { StatusBar } from "expo-status-bar";
+import { Provider } from "react-redux";
 
 import HomeScreen from "./screens/HomeScreen";
 import WeatherScreen from "./screens/WeatherScreen";
 import CurrentScreen from "./screens/CurrentScreen";
 import { Home, Weather, Current } from "./constants/constants";
+import type { RootStackParamList } from "./types";
+import store from "./store/store";
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
   const [loadedFonts] = useFonts({
@@ -23,17 +27,20 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName={Home}
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name={Home} component={HomeScreen} />
-        <Stack.Screen name={Weather} component={WeatherScreen} />
-        <Stack.Screen name={Current} component={CurrentScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName={Home}
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name={Home} component={HomeScreen} />
+          <Stack.Screen name={Weather} component={WeatherScreen} />
+          <Stack.Screen name={Current} component={CurrentScreen} />
+        </Stack.Navigator>
+        <StatusBar translucent={true} />
+      </NavigationContainer>
+    </Provider>
   );
 }
