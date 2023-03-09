@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     height: 100,
     top: 0,
     alignItems: "center",
+    zIndex: 10,
   },
   appBarTitle: {
     position: "absolute",

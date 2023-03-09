@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     borderRadius: 10,
     marginVertical: 10,
+    alignSelf: "flex-start",
   },
   titleText: {
     textTransform: "uppercase",

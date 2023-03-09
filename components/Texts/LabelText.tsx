@@ -6,7 +6,7 @@ import { ThemeInterface } from "../../constants/constants";
 
 type LabelTextProps = {
   heading: string;
-  text: string;
+  text?: string;
 };
 
 const LabelText = ({ heading, text }: LabelTextProps) => {

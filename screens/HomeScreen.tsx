@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 import Button from "../components/Buttons/Button";
-import { Weather, Current, ThemeInterface } from "../constants/constants";
+import { Current, ThemeInterface, Forecasts } from "../constants/constants";
 import { cycleTheme } from "../store/slices/themeSlice";
 import { RootStackParamList } from "../types";
 import { RootState } from "../store/store";
@@ -27,7 +27,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
       </Text>
       <Button
         title="Weather Forecast"
-        onPress={() => navigation.navigate(Weather)}
+        onPress={() => navigation.navigate(Forecasts)}
       />
       <Button
         title="Current Conditions"

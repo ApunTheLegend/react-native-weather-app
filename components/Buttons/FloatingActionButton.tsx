@@ -30,8 +30,8 @@ const FloatingActionButton = ({ onPress, title }: FloatingActionButtonType) => {
 const styles = StyleSheet.create({
   fab: {
     position: "absolute",
-    bottom: 20,
-    right: 20,
+    bottom: 5,
+    right: 5,
     paddingVertical: 10,
     paddingHorizontal: 10,
     borderRadius: 20,

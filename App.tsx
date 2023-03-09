@@ -5,9 +5,10 @@ import { StatusBar } from "expo-status-bar";
 import { Provider } from "react-redux";
 
 import HomeScreen from "./screens/HomeScreen";
-import WeatherScreen from "./screens/WeatherScreen";
 import CurrentScreen from "./screens/CurrentScreen";
-import { Home, Weather, Current } from "./constants/constants";
+import ForecastsScreen from "./screens/ForecastsScreen";
+
+import { Home, Current, Forecasts } from "./constants/constants";
 import type { RootStackParamList } from "./types";
 import store from "./store/store";
 
@@ -36,8 +37,8 @@ export default function App() {
           }}
         >
           <Stack.Screen name={Home} component={HomeScreen} />
-          <Stack.Screen name={Weather} component={WeatherScreen} />
           <Stack.Screen name={Current} component={CurrentScreen} />
+          <Stack.Screen name={Forecasts} component={ForecastsScreen} />
         </Stack.Navigator>
         <StatusBar translucent={true} />
       </NavigationContainer>

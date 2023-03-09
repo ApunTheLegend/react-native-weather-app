@@ -58,20 +58,23 @@ export const get5DayForecast = async (
   try {
     const locationKey = await getLocationKey(cityQuery);
 
-    const response = await axios.get(
+    const response = await axiosConfig.get(
       `/forecasts/v1/daily/5day/${encodeURI(
         locationKey.toString()
-      )}?apikey=${accuweatherApiKey}&metric=true`
+      )}?apikey=${accuweatherApiKey}&details=true&metric=true`
     );
 
     const forecasts = response.data["DailyForecasts"];
     const _5DayForecasts: FiveDayForecastObject[] = [];
+
     forecasts.map((forecast: any) => {
       _5DayForecasts.push({
-        minimumTemperature: forecast["Temperature"]["Minimum"],
-        maximumTemperature: forecast["Temperature"]["Maximum"],
-        iconPhraseDay: forecast["Day"]["IconPhrase"],
-        iconPhraseNight: forecast["Night"]["IconPhrase"],
+        minimumTemperature: forecast["Temperature"]["Minimum"]["Value"],
+        maximumTemperature: forecast["Temperature"]["Maximum"]["Value"],
+        precipitationProbabilityDay:
+          forecast["Day"]["PrecipitationProbability"],
+        precipitationProbabilityNight:
+          forecast["Night"]["PrecipitationProbability"],
       });
     });
 

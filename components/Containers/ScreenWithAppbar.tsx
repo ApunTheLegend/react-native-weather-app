@@ -2,7 +2,6 @@ import React from "react";
 import {
   TouchableWithoutFeedback,
   View,
-  Text,
   StyleSheet,
   Keyboard,
 } from "react-native";
@@ -13,10 +12,11 @@ import AppBar from "./AppBar";
 import FloatingActionButton from "../Buttons/FloatingActionButton";
 import type { RootState } from "../../store/store";
 import { ThemeInterface } from "../../constants/constants";
+import HeaderText from "../Texts/HeaderText";
 
 type ScreenWithAppbarProps = {
   appbarTitle: string;
-  headerText: string;
+  headerText?: string;
   children: React.ReactNode;
 };
 
@@ -36,12 +36,11 @@ const ScreenWithAppbar = ({
         style={[styles.container, { backgroundColor: theme.backgroundColor }]}
       >
         <AppBar title={appbarTitle} />
-        {headerText && (
-          <Text style={[styles.header, { color: theme.primaryColor }]}>
-            {headerText}
-          </Text>
-        )}
-        {children}
+        <View style={styles.innerContainer}>
+          {headerText && <HeaderText headerText={headerText} />}
+
+          {children}
+        </View>
         <FloatingActionButton
           onPress={() => navigation.goBack()}
           title="Back"
@@ -57,12 +56,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  header: {
-    fontSize: 30,
-    fontFamily: "SpaceGroteskBold",
-    textAlign: "center",
-    marginBottom: 15,
-    marginHorizontal: 10,
+  innerContainer: {
+    marginTop: 100,
+    alignItems: "center",
   },
 });
 

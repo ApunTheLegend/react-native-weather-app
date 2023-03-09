@@ -92,3 +92,5 @@ export const themesArray: ThemeInterface[] = [
 export const Home = "Home";
 export const Weather = "Weather";
 export const Current = "Current";
+export const FiveDayWeather = "FiveDayWeather";
+export const Forecasts = "Forecasts";

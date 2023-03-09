@@ -2,6 +2,7 @@ export type RootStackParamList = {
   Home: undefined;
   Weather: undefined;
   Current: undefined;
+  Forecasts: undefined;
 };
 
 export interface CurrentForecast {
@@ -21,8 +22,8 @@ export interface OneDayForecast {
 export type FiveDayForecastObject = {
   minimumTemperature: number;
   maximumTemperature: number;
-  iconPhraseDay: string;
-  iconPhraseNight: string;
+  precipitationProbabilityDay: number;
+  precipitationProbabilityNight: number;
 };
 
 export interface FiveDayForecast {

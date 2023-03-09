@@ -11,11 +11,8 @@ import InputField from "../components/Inputs/InputField";
 import Container from "../components/Containers/Container";
 
 import { Current } from "../constants/constants";
-import type { RootStackParamList } from "../types";
 
-type CurrentScreenProps = NativeStackScreenProps<RootStackParamList, "Current">;
-
-const CurrentScreen = ({ navigation }: CurrentScreenProps) => {
+const CurrentScreen = () => {
   const [city, setCity] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [current, setCurrent] = useState({
@@ -57,7 +54,7 @@ const CurrentScreen = ({ navigation }: CurrentScreenProps) => {
     >
       <InputField
         placeholder="-- Enter a city --"
-        onChangeText={(value: string) => setCity(value)}
+        onChangeText={(value) => setCity(value)}
       />
       <Button
         title="Get current conditions"

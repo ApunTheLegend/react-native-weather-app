@@ -42,11 +42,7 @@ const WeatherScreen = ({ navigation }: WeatherScreenProps) => {
   };
 
   return (
-    <ScreenWithAppbar
-      appbarTitle={Weather}
-      headerText={"Get the Weather"}
-      navigation={navigation}
-    >
+    <ScreenWithAppbar appbarTitle={Weather} headerText={"Get the Weather"}>
       <InputField
         placeholder="-- Enter a city --"
         onChangeText={(value: string) => setCity(value)}
